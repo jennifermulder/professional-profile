@@ -1,4 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Header from './components/Header';
+import Nav from './components/Navigation';
+import Project from './components/Project';
+import Footer from './components/Footer';
 import logo from './logo.svg';
 import './App.css';
 
