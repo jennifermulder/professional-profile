@@ -3,10 +3,10 @@ import React from "react";
 
 function Footer() {
   return (
-    <section id="contact-me" class="step">
-      <div class="step-info">
-        <div class="step-text">
-          <nav class="contact">
+    <section id="contact-me">
+      <div >
+        <div >
+          <nav >
             <ul>
               <li>
                 <a href="https://github.com/jennifermulder" target="_blank">Github</a>

@@ -1,8 +1,9 @@
 import React from 'react';
-import coverImage from "../../assets/cover/cover-image.jpg";
+import coverImage from "../../assets/images/0.jpg";
 
 function About(props) {
   console.log("props", props.children);
+  console.log(coverImage)
   return (
     <section className="my-5">
       <h1 id="about">About Me</h1>
