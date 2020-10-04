@@ -4,8 +4,7 @@ import React from "react";
 function Nav(props) {
 
   const {
-    contactSelected,
-    setContactSelected
+    setPageSelected
   } = props;
 
   return (
@@ -18,26 +17,26 @@ function Nav(props) {
       <nav>
         <ul className="flex-row">
           <li className="mx-2">
-            <a data-testid="about" href="#about" onClick={() => setContactSelected(false)}>
+            <a data-testid="about" href="#about" onClick={() => setPageSelected("about me")}>
               About me
             </a>
           </li>
-          <li className={`mx-2 ${contactSelected && 'navActive'}`}>
-            <span onClick={() => setContactSelected(true)}>
+          <li className="mx-2">
+            <a data-testid="portfolio" href="#portfolio" onClick={() => setPageSelected("portfolio")}>
               Portfolio
-            </span>
+            </a>
           </li>
-          <li className={`mx-2 ${contactSelected && 'navActive'}`}>
-            <span onClick={() => setContactSelected(true)}>
+          <li className="mx-2">
+            <a data-testid="contact" href="#contact" onClick={() => setPageSelected("contact")}>
               Contact
-            </span>
+            </a>
           </li>
-          <li className={`mx-2 ${contactSelected && 'navActive'}`}>
-            <span onClick={() => setContactSelected(true)}>
+          <li className="mx-2">
+            <a data-testid="resume" href="#resume" onClick={() => setPageSelected("resume")}>
               Resume
-            </span>
+            </a>
           </li>
-          
+
         </ul>
       </nav>
     </header>

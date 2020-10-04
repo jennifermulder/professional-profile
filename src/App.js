@@ -1,31 +1,26 @@
 import React, { useState } from 'react';
-import Header from './components/Header';
 import Nav from './components/Navigation';
+import Header from './components/Header';
 import About from './components/About';
 import Contact from './components/Contact';
-import Project from './components/Project';
+import Portfolio from './components/Portfolio';
+import Resume from './components/Project';
 import Footer from './components/Footer';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  const [contactSelected, setContactSelected] = useState(false);
+  const [pages] = useState(["about me", "porfolio", "contact", "resume"]);
+  const [pageSelected, setPageSelected] = useState(pages[0]);
+
   return (
     <div>
-      <Nav
-        contactSelected={contactSelected}
-        setContactSelected={setContactSelected}
-      ></Nav>
+      <Nav setPageSelected={setPageSelected}></Nav>
+      <Header/>
       <main>
-      <About>About Me</About>
-      <Project>Portfolio</Project>
-        {!contactSelected ? (
-          <>
-            <Contact>Contact</Contact>            
-          </>
-        ) : (
-          <Resume></Resume>
-          )}
+        {(pageSelected === "about me") && <About />}
+        {(pageSelected === "portfolio") && <Portfolio />}
+        {(pageSelected === "contact") && <Contact />}
+        {(pageSelected === "resume") && <Resume />}
       </main>
       <Footer></Footer>
     </div>
