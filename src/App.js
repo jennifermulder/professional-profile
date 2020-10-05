@@ -15,7 +15,7 @@ function App() {
   return (
     <div>
       <Nav setPageSelected={setPageSelected}></Nav>
-      <Header/>
+      <Header setPageSelected={setPageSelected}></Header>
       <main>
         {(pageSelected === "about me") && <About />}
         {(pageSelected === "portfolio") && <Portfolio />}

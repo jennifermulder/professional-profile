@@ -4,7 +4,7 @@ import React from 'react';
 const Project = ({ project }) => {
 
   return (
-    <a href={project.href}>
+    <a href={project.deployed}>
       <div className="row">
       <div className="col s12 m7">
         <div className="card">
@@ -14,10 +14,9 @@ const Project = ({ project }) => {
           </div>
           <div className="card-content">
             <p>{project.languages}</p>
-            <p>{project.description}</p>
-          </div>
-          <div class="card-action">
-            <a href={project.href}>Visit {project.name} </a>
+            <p>{project.description}</p> <br />
+            <a href={project.deployed}>Deployed application</a>
+            <a href={project.github}>GitHub repository</a>
           </div>
         </div>
       </div>

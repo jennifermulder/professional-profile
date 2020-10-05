@@ -1,6 +1,16 @@
 import React from 'react';
 import Project from '../Project';
 import image0 from "../../assets/images/0.jpg";
+// import image0 from "../../assets/images/0.jpg";
+// import image0 from "../../assets/images/0.jpg";
+// import image0 from "../../assets/images/0.jpg";
+// import image0 from "../../assets/images/0.jpg";
+// import image0 from "../../assets/images/0.jpg";
+// import image0 from "../../assets/images/0.jpg";
+// import image0 from "../../assets/images/0.jpg";
+// import image0 from "../../assets/images/0.jpg";
+// import image0 from "../../assets/images/0.jpg";
+// import image0 from "../../assets/images/0.jpg";
 
 
 function Portfolio() {
@@ -10,19 +20,48 @@ function Portfolio() {
       languages: "HTML, JS, CSS",
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
       src: image0,
-      href: "https://jennifermulder.github.io/food-festival/"
+      deployed: "https://jennifermulder.github.io/food-festival/",
+      github: "https://jennifermulder.github.io/food-festival/"
     },
     {
       name: 'portfolio 2',
       languages: "HTML, ",
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-      src: image0
+      src: image0,
+      deployed: "https://jennifermulder.github.io/food-festival/",
+      github: "https://jennifermulder.github.io/food-festival/"
     },
     {
       name: 'portfolio 23',
       languages: "JS, CSS",
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-      src: image0
+      src: image0,
+      deployed: "https://jennifermulder.github.io/food-festival/",
+      github: "https://jennifermulder.github.io/food-festival/"
+    },
+    {
+      name: 'portfolio 23',
+      languages: "JS, CSS",
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+      src: image0,
+      deployed: "https://jennifermulder.github.io/food-festival/",
+      github: "https://jennifermulder.github.io/food-festival/"
+    },
+    {
+      name: 'portfolio 23',
+      languages: "JS, CSS",
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+      src: image0,
+      deployed: "https://jennifermulder.github.io/food-festival/",
+      github: "https://jennifermulder.github.io/food-festival/"
+    },
+    {
+      name: 'portfolio 23',
+      languages: "JS, CSS",
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+      src: image0,
+      deployed: "https://jennifermulder.github.io/food-festival/",
+      github: "https://jennifermulder.github.io/food-festival/"
     },
   ]
 
