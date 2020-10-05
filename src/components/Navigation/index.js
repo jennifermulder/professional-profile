@@ -6,14 +6,9 @@ function Nav(props) {
   const {
     setPageSelected
   } = props;
-
+  
+console.log(props, "coming from nav");
   return (
-    <header className="flex-row px-1">
-      <h2>
-        <a data-testid="link" href="/">
-          <span role="img" aria-label="camera"></span> Jennifer Mulder, CPA
-    </a>
-      </h2>
       <nav>
         <ul className="flex-row">
           <li className="mx-2">
@@ -39,7 +34,6 @@ function Nav(props) {
 
         </ul>
       </nav>
-    </header>
   );
 }
 

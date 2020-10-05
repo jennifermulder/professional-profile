@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Nav from './components/Navigation';
 import Header from './components/Header';
 import About from './components/About';
 import Contact from './components/Contact';
@@ -14,8 +13,8 @@ function App() {
 
   return (
     <div>
-      <Nav setPageSelected={setPageSelected}></Nav>
-      <Header setPageSelected={setPageSelected}></Header>
+      <Header pageSelected={pageSelected}
+        setPageSelected={setPageSelected} />
       <main>
         {(pageSelected === "about me") && <About />}
         {(pageSelected === "portfolio") && <Portfolio />}

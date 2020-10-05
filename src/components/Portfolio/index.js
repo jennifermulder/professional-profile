@@ -32,7 +32,7 @@ function Portfolio() {
       github: "https://jennifermulder.github.io/food-festival/"
     },
     {
-      name: 'portfolio 23',
+      name: 'portfolio 27',
       languages: "JS, CSS",
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
       src: image0,
@@ -40,7 +40,7 @@ function Portfolio() {
       github: "https://jennifermulder.github.io/food-festival/"
     },
     {
-      name: 'portfolio 23',
+      name: 'portfolio 26',
       languages: "JS, CSS",
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
       src: image0,
@@ -48,7 +48,7 @@ function Portfolio() {
       github: "https://jennifermulder.github.io/food-festival/"
     },
     {
-      name: 'portfolio 23',
+      name: 'portfolio 25',
       languages: "JS, CSS",
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
       src: image0,
@@ -56,7 +56,7 @@ function Portfolio() {
       github: "https://jennifermulder.github.io/food-festival/"
     },
     {
-      name: 'portfolio 23',
+      name: 'portfolio 24',
       languages: "JS, CSS",
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
       src: image0,
@@ -70,7 +70,8 @@ function Portfolio() {
       <h1>Portfolio</h1> {
         projects.map((project) => (
           <Project
-            key={project.project}
+            key={project.name}
+            name={project.name}
             project={project}
           />
         ))}

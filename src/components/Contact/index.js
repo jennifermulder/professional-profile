@@ -45,12 +45,6 @@ function ContactForm() {
     console.log(formState);
   }
 
-  // JSX
-  //htmlFor = for 
-  //defaultValue={formState.name} --- assign initial state values to the input fields in the DOM
-  //default value pulling from formState
-  //on Change (ex. keystroke in field), fire handleChange function
-  // && if true, will render second part
   return (
     <section>
       <h1 data-testid="h1tag">Contact me</h1>
