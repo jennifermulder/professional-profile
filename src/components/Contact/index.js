@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../../utils/helpers';
+import '../../App.css';
 
 function ContactForm() {
   //hook
@@ -46,13 +47,13 @@ function ContactForm() {
   }
 
   return (
-    <section>
-      <h1 data-testid="h1tag">Contact me</h1>
+    <section className="container">
+      <h2 id="contact" data-testid="h1tag">Contact me</h2>
           
-          <h4 htmlFor="email">Email address: jlmulder2014@gmail.com</h4>
-          <h4 htmlFor="email">Phone Number: 510.766.6583</h4>
+          <h6 htmlFor="email">Email address: jlmulder2014@gmail.com</h6>
+          <h6 htmlFor="email">Phone Number: 510.766.6583</h6>
 
-      <h1 data-testid="h1tag">Send Email</h1>
+      <h2 id="contact" data-testid="h1tag">Send Email</h2>
       <form id="contact-form" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name:</label>

@@ -4,19 +4,20 @@ import React from "react";
 function Nav(props) {
 
   const {
-    setPageSelected
+    setPageSelected,
+    pageSelected
   } = props;
 
   console.log(props, "coming from nav");
   return (
-    <nav>
+    <nav className="orange lighten-3">
       <ul className="flex-row">
-        <li className={`mx-2 ${true ? 'active' : ''}`}>
+        <li className={`mx-2 ${(pageSelected === "about me") ? 'active' : ''}`}>
           <a data-testid="about" href="#about" onClick={() => setPageSelected("about me")}>
             About me
             </a>
         </li>
-        <li className="mx-2">
+        <li className={`mx-2 ${(pageSelected === "portfolio") ? 'active' : ''}`}>
           <a data-testid="portfolio" href="#portfolio" onClick={() => setPageSelected("portfolio")}>
             Portfolio
             </a>

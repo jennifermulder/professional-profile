@@ -11,11 +11,12 @@ const Project = ({ project }) => {
         <a href={project.deployed}>
           <div className="card-image">
             <img src={project.src} alt='{project.name} project' />
-            <span className="card-title">{project.name}</span>
+            
           </div>
         </a>
-          <div className="card-content">
-            <p>{project.languages}</p>
+          <div className="card-content black-text">
+          <span className="card-title black-text">{project.name}</span>
+            <p>{project.languages}</p> <br />
             <p>{project.description}</p> <br />
             <a href={project.deployed}>Deployed application</a> <br />
             <a href={project.github}>GitHub repository</a>

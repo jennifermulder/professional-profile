@@ -6,6 +6,7 @@ import nogginbloggin from "../../assets/images/noggin-bloggin1.jpg";
 import passwordgenerator from "../../assets/images/password-generator-markup.jpg";
 import safr from "../../assets/images/safr1.jpg";
 import weatherdashboard from "../../assets/images/weather-dashboard.jpg";
+import '../../App.css';
 
 
 function Portfolio() {
@@ -61,8 +62,8 @@ function Portfolio() {
   ]
 
   return (
-    <section>
-      <h1>Portfolio</h1> {
+    <section className="container">
+      <h2 id="portfolio">Portfolio</h2> {
         projects.map((project) => (
           <Project
             key={project.name}
