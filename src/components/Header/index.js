@@ -10,10 +10,10 @@ function Header(props) {
   } = props;
 
   return (
-    <header className="flex-row px-1 black">
+    <header className="flex-row black">
       <h2 id="header">
         <a data-testid="link" href="/">
-          <span role="img" aria-label="camera"></span> Jennifer Mulder, CPA
+          <span role="img" aria-label="name"></span> Jennifer Mulder, CPA
       </a>
       </h2>
       <Nav pageSelected={pageSelected}

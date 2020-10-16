@@ -1,3 +1,7 @@
+#html {
+  height: 100%;
+}
+
 #about, #portfolio, #contact, #resume {
   margin-top: 0;
   padding-top: 10%;
@@ -5,10 +9,48 @@
 
 #header {
   margin-top: 0%;
-  padding: 5%;
+  padding: 2.5%;
+  margin-bottom: 0%;
 }
 
+#about {
+  padding-top: 50px
+}
 
+main {
+  margin: 0;
+  padding: 0;
+  background: url(https://i.dlpng.com/static/png/5421859-watercolor-background-missouri-state-teachers-association-watercolor-background-1920_1100_preview.png);
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#about-me {
+  margin: 0;
+  font-size: 20px;
+  margin-top: 40px;
+}
+
+a {
+  position: center;
+}
+
+.input:hover {
+  background-color: white;
+}
+
+.row {
+  margin-bottom: 0px;
+}
+
+@media screen and (max-width: 650px) {
+
+    #about-me {
+      margin-top: 30px;
+    }
+
+  
+}
 
 
 /* .App {

@@ -12,7 +12,7 @@ function App() {
   const [pageSelected, setPageSelected] = useState(pages[0]);
 
   return (
-    <div>
+    <div id="html">
       <Header pageSelected={pageSelected}
         setPageSelected={setPageSelected} />
       <main className="light-blue darken-4 white-text">
