@@ -15,7 +15,6 @@ function ContactForm() {
     if (e.target.name === 'email') {
       //store return value in "isValid"
       const isValid = validateEmail(e.target.value);
-      console.log(isValid);
       // isValid conditional statement
       if (!isValid) {
         setErrorMessage('Your email is invalid.');
@@ -39,42 +38,41 @@ function ContactForm() {
       setFormState({ ...formState, [e.target.name]: e.target.value });
     }
   }
-  // console.log(formState);
+
 
   function handleSubmit(e) {
     e.preventDefault();
-    console.log(formState);
   }
 
   return (
     <section className="row">
-      <div class="col s12 m6">
-        <h2 class="center" id="contact" data-testid="h1tag">Contact me</h2>
+      <div className="col s12 m6">
+        <h2 className="center" id="contact" data-testid="h1tag">Contact me</h2>
 
-        <h6 class="center" htmlFor="email">Email address: jlmulder2014@gmail.com</h6>
-        <h6 class="center" htmlFor="email">Phone Number: 510.766.6583</h6>
+        <h6 className="center" htmlFor="email">Email address: jlmulder2014@gmail.com</h6>
+        <h6 className="center" htmlFor="email">Phone Number: 510.766.6583</h6>
       </div>
-      <div class="col s12 m6">
-        <h2 class="center" id="contact" data-testid="h1tag">Send Email</h2>
+      <div className="col s12 m6">
+        <h2 className="center" id="contact" data-testid="h1tag">Send Email</h2>
         <form id="contact-form" onSubmit={handleSubmit}>
           <div>
-            <label class="white-text" htmlFor="name">Name:</label>
-            <input class="input" type="text" name="name" defaultValue={name} onBlur={handleChange} />
+            <label className="white-text" htmlFor="name">Name:</label>
+            <input className="input" type="text" name="name" defaultValue={name} onBlur={handleChange} />
           </div>
           <div>
-            <label class="white-text" htmlFor="email">Email address:</label>
-            <input class="input" type="email" name="email" defaultValue={email} onBlur={handleChange} />
+            <label className="white-text" htmlFor="email">Email address:</label>
+            <input className="input" type="email" name="email" defaultValue={email} onBlur={handleChange} />
           </div>
           <div>
-            <label class="white-text" htmlFor="message">Message:</label>
-            <textarea class="input" name="message" rows="5" defaultValue={message} onBlur={handleChange} />
+            <label className="white-text" htmlFor="message">Message:</label>
+            <textarea className="input" name="message" rows="5" defaultValue={message} onBlur={handleChange} />
           </div>
           {errorMessage && (
             <div>
               <p className="error-text">{errorMessage}</p>
             </div>
           )}
-          <button class="btn-small cyan" type="submit" data-testid="button">Submit</button>
+          <button className="btn-small cyan" type="submit" data-testid="button">Submit</button>
         </form>
       </div>
     </section>

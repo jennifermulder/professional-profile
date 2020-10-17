@@ -8,7 +8,6 @@ function Nav(props) {
     pageSelected
   } = props;
 
-  console.log(props, "coming from nav");
   return (
     <nav className="orange lighten-3">
       <ul className="flex-row">

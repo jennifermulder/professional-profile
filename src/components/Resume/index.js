@@ -19,14 +19,14 @@ Full-Stack Web developer and Certified Public Accountant with a background in fi
 
       <h4>PROJECTS</h4>
       <h5>HikeFinder</h5> <p>GitHub: jennifermulder /explore | Deployed: jennifermulder.github.io/explore/</p>
-      <ul class="browser-default" >
+      <ul className="browser-default" >
         <li>  Search application to identify nearby trails and sporting good stores utilizing server-side APIs: Hiking Project, Google Geocode</li>
         <li>  Managed a team of 4, provided organization/detailed role responsibilities/ assignments to meet requirements. Lead meetings</li>
         <li>  Core responsibilities: Designed the layout for and built an input driven page utilizing CSS stylings with Materialize</li>
         <li>  HTML, CSS, JS, Server-Side APIs, Third-Party APIs: Materialize</li>
       </ul>
       <h5>Safr</h5> <p>GitHub: NGDino/safety-first | Deployed: ssafr.herokuapp.com/login</p>
-      <ul class="browser-default" >
+      <ul className="browser-default" >
         <li>CMS-style blog site where users can publish posts, reviews, and safety measures offered by various businesses during COVID-19. Mobile friendly website that allows the users to get up-to-date information regarding dining, entertainment, and the outdoors.</li>
         <li>Managed a team of 3, provided organization/detailed role responsibilities/ assignments to meet requirements. Lead meetings</li>
         <li>Core responsibilities: Back End (Models, Database connection, Authentication, Login)</li>
