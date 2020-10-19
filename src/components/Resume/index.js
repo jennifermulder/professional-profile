@@ -4,7 +4,7 @@ import './Resume.css';
 
 function Resume() {
   return (
-    <section className="my-5 container">
+    <section className="my-5 container bg-text">
       <h2 id="about">Resume</h2>
       <a href="https://docs.google.com/document/d/1PgVg2DeNrB_QIiBI3yQFI0mzb0J90FR_UCDtqVIn_bU/edit#">Download</a>
       <h4>SUMMARY</h4>

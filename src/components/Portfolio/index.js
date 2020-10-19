@@ -62,7 +62,7 @@ function Portfolio() {
   ]
 
   return (
-    <section className="container">
+    <section className="container bg-text">
       <h2 id="portfolio">Portfolio</h2> {
         projects.map((project) => (
           <Project

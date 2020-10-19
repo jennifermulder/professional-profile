@@ -39,13 +39,52 @@ function ContactForm() {
     }
   }
 
+  var form = document.forms["contact"];
 
   function handleSubmit(e) {
     e.preventDefault();
+    // Set Initial Variables
+		// var target = e.target || e.srcElement;
+		var to = 'jlmulder2014@gmail.com';
+		var uri = 'mailto:' + to;
+		var body = '';
+
+		// Set Form Values to Variables
+		var name = "jenn";
+		var subject = "jenn";
+		var phone = "510";
+    var message = "jenn";
+    
+    // var name = target.elements['name'].value;
+		// var subject = target.elements['subject'].value;
+		// var phone = target.elements['phone'].value;
+		// var message = target.elements['message'].value;
+
+		// Build Body / Message with all Input Fields
+		body += message + "\r\n\r\n";
+		body += "Name: " + name + "\r\n";
+		body += "Phone Number: " + phone + "\r\n";
+
+		// Build final Mailto URI
+		uri += '?subject=' + encodeURIComponent(subject);
+		uri += '&body=' + encodeURIComponent(body);
+
+		// Open Mailto in New Window / Tab
+		window.open(uri,'_blank');
   }
 
+  
+	// form.addEventListener('submit',handleSubmit,false);
+
+	// function contact_submit(e) {
+	// 	// Stop Form From Submitting
+	// 	e.preventDefault();
+
+		
+	// }
+
   return (
-    <section className="row">
+    <section className="row bg-text">
       <div className="col s12 m6">
         <h2 className="center" id="contact" data-testid="h1tag">Contact me</h2>
 
