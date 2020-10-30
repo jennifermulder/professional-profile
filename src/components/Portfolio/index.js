@@ -1,6 +1,7 @@
 import React from 'react';
 import Project from '../Project';
 import hikefinder from "../../assets/images/hike-finder.jpg";
+import garagecollage from "../../assets/images/garage-collage.jpg";
 import money from "../../assets/images/money-money-money.jpg";
 import nogginbloggin from "../../assets/images/noggin-bloggin1.jpg";
 import passwordgenerator from "../../assets/images/password-generator-markup.jpg";
@@ -11,6 +12,14 @@ import '../../App.css';
 
 function Portfolio() {
   const projects = [
+    {
+      name: 'Garage Collage',
+      languages: "HTML, CSS, Javascript, React JS",
+      description: "An e-commerce application catering to the needs of a recent/ frequent mover looking to buy/sell lightly used goods at a bargain. This platform is a virtual garage sale, allowing users from all over the capability to purchase and purge on a world-wide scale.",
+      src: garagecollage,
+      deployed: "https://garage-collage-2468.herokuapp.com",
+      github: "https://github.com/jennifermulder/garage-endeavor"
+    },
     {
       name: 'Hike Finder',
       languages: "HTML, CSS, Javascript",
