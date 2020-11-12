@@ -27,7 +27,7 @@ https://jennifermulder.github.io/professional-profile/
 This profile is a work in progress and will be updated with all new projects as well as assitional stylings and animations
 
 ## Contribution
-Created by Jennifer Mulder
+Created by Jennifer Mulder, Cpa
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
