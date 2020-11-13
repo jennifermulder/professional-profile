@@ -24,7 +24,7 @@ To run program: node server
 https://jennifermulder.github.io/professional-profile/
 
 ## Project Status
-This profile is a work in progress and will be updated with all new projects as well as assitional stylings and animations
+This profile is a work in progress and will be updated with all new projects as well as assitional stylings and animations.
 
 ## Contribution
 Created by Jennifer Mulder, Cpa
